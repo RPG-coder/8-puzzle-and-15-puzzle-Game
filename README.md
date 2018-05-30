@@ -21,3 +21,6 @@ The Front-end for this Game is built by
             $sudo apt-get install opencv-data
             $sudo apt-get install python-opencv
             $sudo apt-get install python3-opencv
+
+
+  Update Bug Fixed : generates only Solvable 8-puzzle and 15-puzzle
