@@ -28,5 +28,7 @@ The Front-end for this Game is built by
   
       $python3 Game.py
 Bugs Fixed with Features :
+
       - genetate Solveble Puzzles Only
+      
       - Hint Sugession 
