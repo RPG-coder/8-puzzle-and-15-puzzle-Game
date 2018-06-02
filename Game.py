@@ -2,7 +2,7 @@ from puzzle import *
 import numpy as np
 import cv2
 
-#Classes
+#Game GUI Classes
 class GamePlay() :
 	def __init__(self,puzzleCode,windowName,width,height) :
 		self.width,self.height	= width,height-50
@@ -15,6 +15,8 @@ class GamePlay() :
 		self.image = np.zeros((self.width,self.height+50,3),np.uint8)
 		self.game = Game(self.puzzle_Code)
 		self.windowName = windowName
+		self.lastMove   = None
+		self.hint = -1
 
 	def mainLoop(self) :
 		cv2.setMouseCallback(self.windowName,self.mouseCall)
@@ -29,6 +31,11 @@ class GamePlay() :
 			if key_pressed==27 : self.windowClose = True
 			elif key_pressed==ord('r') or key_pressed==ord('R') : 
 				self.game.reset_game()
+				slef.hint=-1
+				self.change = True
+			elif key_pressed==ord('h') or key_pressed==ord('H') : 
+				#print(self.game.nextHint())
+				self.hint,score = self.game.nextHint(self.lastMove)
 				self.change = True
 
 	def draw(self) :
@@ -37,11 +44,14 @@ class GamePlay() :
 				start_point = (i*(self.width//self.row_size)+5,j*(self.height//self.row_size)+5)
 				end_point   = ((i+1)*(self.width//self.row_size)-5,(j+1)*(self.height//self.row_size)-5)
 				if self.game.blocks[(j,i)].number!=0 :
-					cv2.rectangle(self.image,start_point,end_point,(255,0,255),-1)
+					color = (255,0,255)
+					if self.game.blocks[(j,i)].number==self.hint : color = (0,255,0)
+					cv2.rectangle(self.image,start_point,end_point,color,-1)
 					text_pos = (start_point[0]+self.width//9,start_point[1]+self.height//7)
 					cv2.putText(self.image,str(self.game.blocks[(j,i)].number),text_pos,cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,255),2)
 					cv2.putText(self.image,"Esc - Main Menu ",(width-150,height-30),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,255,255),1)
 					cv2.putText(self.image,"R - Reset",(20,height-30),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,255,255),1)
+					cv2.putText(self.image,"H - Hint",(20,height-10),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,255,255),1)
 					if self.game.win :
 						cv2.putText(self.image,"You Win!!!",(int(width/2)-50,height-30),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,255,255),1)
 					self.blockInfo.append((self.game.blocks[(j,i)],self.game.blocks[(j,i)].number,start_point,end_point))
@@ -55,6 +65,7 @@ class GamePlay() :
 			if block is not None or number!=-1 :
 				if block in (self.zeroBlock.up,self.zeroBlock.down,self.zeroBlock.left,self.zeroBlock.right) :
 					self.game.swapBlocks(self.zeroBlock,block)
+					self.lastMove = self.zeroBlock
 					self.change = True
 
 	def getBlock(self,posx,posy) :
@@ -63,6 +74,8 @@ class GamePlay() :
 				return (i[0],i[1])
 		return None,-1;
 
+
+#Main Program + Main Menu Creation
 #Function Definition
 def buttonPress(event,posx,posy,flag,param) :
 	global difficulty
@@ -72,7 +85,7 @@ def buttonPress(event,posx,posy,flag,param) :
 		elif (width/2)-50<=posx<=(width/2)+50 and (height/2)+50<=posy<=(height/2)+100 :
 			difficulty=1 
 
-#Main Program
+#Main Program 
 cv2.namedWindow("Puzzle-Game")
 width,height = 450,450
 mainMenuButton = []
