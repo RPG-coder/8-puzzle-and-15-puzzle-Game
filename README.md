@@ -21,3 +21,12 @@ The Front-end for this Game is built by
             $sudo apt-get install opencv-data
             $sudo apt-get install python-opencv
             $sudo apt-get install python3-opencv
+  puzzle.py - Back-end
+  Game.py   - Fornt-end
+  
+  Run the Game
+  
+      $python3 Game.py
+Bugs Fixed with Features :
+      - genetate Solveble Puzzles Only
+      - Hint Sugession 
