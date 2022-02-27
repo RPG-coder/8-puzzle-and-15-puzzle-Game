@@ -166,7 +166,10 @@ class Game() :
 						else :	#Otherwise, there is only one Block to Move then or most possibly can also be the next best way
 							for i in rank : number,bestScore = i.number,rank[i]
 					else :	#Otherwise, there is only one Block other than previously moved
-						number,bestScore = i.number,bestScore
+						try:
+							number,bestScore = i.number,bestScore
+						except:
+							return -1, -1
 		return number,bestScore
 
 '''

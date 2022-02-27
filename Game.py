@@ -31,12 +31,15 @@ class GamePlay() :
 			if key_pressed==27 : self.windowClose = True
 			elif key_pressed==ord('r') or key_pressed==ord('R') : 
 				self.game.reset_game()
-				slef.hint=-1
+				self.hint=-1
 				self.change = True
 			elif key_pressed==ord('h') or key_pressed==ord('H') : 
 				#print(self.game.nextHint())
 				self.hint,score = self.game.nextHint(self.lastMove)
-				self.change = True
+				if self.hint != -1:
+					self.change = True
+				else:
+					cv2.putText(self.image,"No moves available!!!",(int(width/2)-50,height-10),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,255,255),1)
 
 	def draw(self) :
 		for i in range(self.row_size) :
@@ -72,7 +75,7 @@ class GamePlay() :
 		for i in self.blockInfo :
 			if i[2][0]<=posx<=i[3][0] and i[2][1]<=posy<=i[3][1] :
 				return (i[0],i[1])
-		return None,-1;
+		return None,-1
 
 
 #Main Program + Main Menu Creation
@@ -84,6 +87,7 @@ def buttonPress(event,posx,posy,flag,param) :
 			difficulty=0
 		elif (width/2)-50<=posx<=(width/2)+50 and (height/2)+50<=posy<=(height/2)+100 :
 			difficulty=1 
+
 
 #Main Program 
 cv2.namedWindow("Puzzle-Game")
