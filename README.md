@@ -6,7 +6,7 @@
 ## Table of Content
 - [8-puzzle and 15-puzzle Game using OpenCV/Python](#8-puzzle-and-15-puzzle-game-using-opencvpython)
 - [Structure of the application](#structure-of-the-application)
-- [Features](#features)
+- [Features](#features-)
 - [Wanna see how this game works??](#demo-wanna-try-and-see-how-this-game-works)
 - [Are you interested in how this game works? - Installation Procedure](#are-you-interested-in-how-this-game-works---installation-procedure)
   - [Installation Dependency: Installing Miniconda](#installation-dependency-installing-miniconda)
@@ -32,7 +32,7 @@ Game.py   - Fornt-end | GUI using Open CV
 - Windows executable included in a **dist** folder  
 
 ## Demo: Wanna try and see how this game works??
-- Windows executable file available in [dist/Game.exe]()
+- Windows executable file available in [dist/Game.exe](https://github.com/RPG-coder/8-puzzle-and-15-puzzle-Game/tree/master/dist)
 
 ## Are you interested in how this game works? - Installation Procedure
 ### Installation Dependency: Installing Miniconda
