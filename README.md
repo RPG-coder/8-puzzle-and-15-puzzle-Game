@@ -3,13 +3,13 @@
 ## Table of Content 🤖
 - [8-puzzle and 15-puzzle Game using OpenCV/Python](#8-puzzle-and-15-puzzle-game-using-opencvpython)
 - [Structure of the application](#structure-of-the-application)
-- [Features](#features-)
+- [Features](#features--)
 - [Wanna try out this game??](#demo-wanna-try-and-see-how-this-game-works)
 - [Interested in working of the game? - Installation Procedure](#interested-in-working-of-the-game---installation-procedure)
   - [Installation Dependency: Installing Miniconda](#installation-dependency-installing-miniconda)
-  - [Setting up the Environment](#setting-up-the-environment)
-  - [Run the Game](#run-the-game)
-- [Like the repo??](#like-the-repo)
+  - [Setting up the Environment](#setting-up-the-environment-----)
+  - [Run the Game](#run-the-game-)
+- [Like the repo??](#like-the-repo----)
 
 
 ## 8-puzzle and 15-puzzle Game using OpenCV/Python
