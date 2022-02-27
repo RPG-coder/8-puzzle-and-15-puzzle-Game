@@ -1,6 +1,6 @@
-# 8-puzzle-and-15-puzzle-Game
+# 👾 8-puzzle-and-15-puzzle-Game 👾
 
-## Table of Content
+## Table of Content 🤖
 - [8-puzzle and 15-puzzle Game using OpenCV/Python](#8-puzzle-and-15-puzzle-game-using-opencvpython)
 - [Structure of the application](#structure-of-the-application)
 - [Features](#features-)
@@ -25,7 +25,7 @@ Core functionalities for game-space conditions and hinting system are included i
 puzzle.py - Back-end | Code for game conditions and hinting system
 Game.py   - Fornt-end | GUI using Open CV
 
-## Features :
+## Features : 💯
 - Generates only solveble puzzles
 - Comes with a Hint suggestion
 - Windows executable included in a **dist** folder  
@@ -38,7 +38,7 @@ Game.py   - Fornt-end | GUI using Open CV
 - available on https://docs.conda.io/en/latest/miniconda.html
 - Make sure to setup the environment variable for conda command
 
-### Setting up the Environment
+### Setting up the Environment ⛺ 🌄 🌏 🌎 🌍
 - Open command prompt
 
 - Execute below command to setup a local environment:
@@ -53,11 +53,11 @@ Game.py   - Fornt-end | GUI using Open CV
 
   $ conda install opencv-python -y
 
-### Run the Game
+### Run the Game 💫
 
   $python3 Game.py
 
-## Like the repo?? 
+## Like the repo?? 🥰 💓 💑 💜
 In case you have taken a like for this repository, please do star or fork my repo. Your support will not only help me in improving recognition for this repository but also encourage me in developing and sharing more interesting projects and contents.
 
 Likewise, Thank you for show your appreciation for this repo. 
