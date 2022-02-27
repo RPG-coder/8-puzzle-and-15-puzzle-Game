@@ -1,34 +1,68 @@
 # 8-puzzle-and-15-puzzle-Game
-8-puzzle and 15-puzzle Game using OpenCV/Python
 
-8-Puzzle and 15-Puzzle Game
 
-  - System Requirement : Ubuntu OS
-  - Python3
-  
 
-The Front-end for this Game is built by
 
-  - Numpy (Numerical and Scientific Computing Library in Python)
-  
-            $sudo apt-get install python-numpy
-            $sudo apt-get install python3-numpy
-            
-  - OpenCV (Computer Vision)
-  
-            $sudo apt-get install libopencv-dev
-            $sudo apt-get install libopencv-core-dev
-            $sudo apt-get install opencv-data
-            $sudo apt-get install python-opencv
-            $sudo apt-get install python3-opencv
-  puzzle.py - Back-end
-  Game.py   - Fornt-end
-  
-  Run the Game
-  
-      $python3 Game.py
-Bugs Fixed with Features :
+## Table of Content
+- [8-puzzle and 15-puzzle Game using OpenCV/Python](#8-puzzle-and-15-puzzle-game-using-opencvpython)
+- [Structure of the application](#structure-of-the-application)
+- [Features](#features)
+- [Wanna see how this game works??](#demo-wanna-try-and-see-how-this-game-works)
+- [Are you interested in how this game works? - Installation Procedure](#are-you-interested-in-how-this-game-works---installation-procedure)
+  - [Installation Dependency: Installing Miniconda](#installation-dependency-installing-miniconda)
+  - [Setting up the Environment](#setting-up-the-environment)
+  - [Run the Game](#run-the-game)
 
-      - genetate Solveble Puzzles Only
-      
-      - Hint Sugession 
+## 8-puzzle and 15-puzzle Game using OpenCV/Python
+This repository contains an 8-puzzle and 15-puzzle game. 
+
+This simple game comes with a elegant user interface and options using mouse & keyboard stokes. User has the ability to play either an 8 or a 15 puzzle game.
+
+The Front-end GUI for this game is built by OpenCV (Computer Vision) and can be replaceable.
+
+Core functionalities for game-space conditions and hinting system are included in puzzle.py.
+  
+## Structure of the application
+puzzle.py - Back-end | Code for game conditions and hinting system
+Game.py   - Fornt-end | GUI using Open CV
+
+## Features :
+- Generates only solveble puzzles
+- Comes with a Hint suggestion
+- Windows executable included in a **dist** folder  
+
+## Demo: Wanna try and see how this game works??
+- Windows executable file available in [dist/Game.exe]()
+
+## Are you interested in how this game works? - Installation Procedure
+### Installation Dependency: Installing Miniconda
+- available on https://docs.conda.io/en/latest/miniconda.html
+- Make sure to setup the environment variable for conda command
+
+### Setting up the Environment
+- Open command prompt
+
+- Execute below command to setup a local environment:
+  
+  $ conda create -n puzzle -y # or environment name of your choice
+
+- Activate your environment:
+
+  $ conda activate puzzle
+
+- Installing Application dependencies: Installing OpenCV-Python
+
+  $ conda install opencv-python -y
+
+### Run the Game
+
+  $python3 Game.py
+
+## Liked the repo?? 
+In case you have taken a like for this repository, please do star or fork my repo. Your support will not only help me in improving recognition for this repository but also encourage me in developing and sharing more interesting projects and contents.
+
+Likewise, Thank you for show your appreciation for this repo. 
+
+<hr/>
+
+<h6 align="center"> Under GNU GPLv3 Licence</h6>
