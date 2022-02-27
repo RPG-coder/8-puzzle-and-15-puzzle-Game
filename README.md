@@ -1,17 +1,16 @@
 # 8-puzzle-and-15-puzzle-Game
 
-
-
-
 ## Table of Content
 - [8-puzzle and 15-puzzle Game using OpenCV/Python](#8-puzzle-and-15-puzzle-game-using-opencvpython)
 - [Structure of the application](#structure-of-the-application)
 - [Features](#features-)
-- [Wanna tryout this game??](#demo-wanna-try-and-see-how-this-game-works)
-- [Interested in working of the game? - Installation Procedure](#interested-in-working-of-the-game--installation-procedure)
+- [Wanna try out this game??](#demo-wanna-try-and-see-how-this-game-works)
+- [Interested in working of the game? - Installation Procedure](#interested-in-working-of-the-game---installation-procedure)
   - [Installation Dependency: Installing Miniconda](#installation-dependency-installing-miniconda)
   - [Setting up the Environment](#setting-up-the-environment)
   - [Run the Game](#run-the-game)
+- [Like the repo??](#like-the-repo)
+
 
 ## 8-puzzle and 15-puzzle Game using OpenCV/Python
 This repository contains an 8-puzzle and 15-puzzle game. 
@@ -58,7 +57,7 @@ Game.py   - Fornt-end | GUI using Open CV
 
   $python3 Game.py
 
-## Liked the repo?? 
+## Like the repo?? 
 In case you have taken a like for this repository, please do star or fork my repo. Your support will not only help me in improving recognition for this repository but also encourage me in developing and sharing more interesting projects and contents.
 
 Likewise, Thank you for show your appreciation for this repo. 
