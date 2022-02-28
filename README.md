@@ -64,4 +64,4 @@ Likewise, Thank you for showing your appreciation to this repo.
 
 <hr/>
 
-<h6 align="center"> Under GNU GPLv3 Licence</h6>
+<h6 align="center"> Under GNU GPLv3 License</h6>
