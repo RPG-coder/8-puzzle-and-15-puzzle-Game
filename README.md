@@ -1,5 +1,5 @@
 <h1 align="center"> 👾 8-puzzle-and-15-puzzle-Game 👾 </h1>
-<h6 align="center">Uses Backtracking algorithm with OpenCV & Python</h6>
+<h6 align="center">Using Backtracking algorithm and OpenCV + Python</h6>
 
 ## Table of Content 🤖
 - [8-puzzle and 15-puzzle Game using OpenCV/Python](#8-puzzle-and-15-puzzle-game-using-opencvpython)
