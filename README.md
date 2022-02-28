@@ -1,4 +1,5 @@
-# 👾 8-puzzle-and-15-puzzle-Game 👾
+<h1 align="center"> 👾 8-puzzle-and-15-puzzle-Game 👾 </h1>
+<h6 align="center">Uses Backtracking algorithm with OpenCV & Python</h6>
 
 ## Table of Content 🤖
 - [8-puzzle and 15-puzzle Game using OpenCV/Python](#8-puzzle-and-15-puzzle-game-using-opencvpython)
@@ -57,7 +58,7 @@ Game.py   - Fornt-end | GUI using Open CV
 
   $python3 Game.py
 
-## Like the repo?? 🥰 💓 💑 💜
+## Like the repo?? 🥰 💓 💜
 In case you have taken a like for this repository, please do star or fork my repo. Your support will not only help me in improving recognition for this repository but also encourage me in developing and sharing more interesting projects and contents.
 
 Likewise, Thank you for showing your appreciation to this repo. 
